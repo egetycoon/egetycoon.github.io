@@ -1,10 +1,106 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Ege Tycoon – Support</title><style>:root{--bg:#fff8ee;--ink:#22304a;--muted:#6b7689;--line:#e6d8c3;--blue:#2f7be0;--card:#ffffff}
-@media (prefers-color-scheme:dark){:root{--bg:#141b28;--ink:#eef2f8;--muted:#9aa6ba;--line:#2b3750;--blue:#6aa8ff;--card:#1c2536}}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
-main{max-width:720px;margin:0 auto;padding:32px 16px 64px}h1{font-size:30px;line-height:1.2;margin:0 0 4px}h2{font-size:20px;margin:28px 0 8px}
-p,li{margin:0 0 10px}ul{padding-left:22px;margin:0 0 10px}a{color:var(--blue)}nav{display:flex;gap:16px;flex-wrap:wrap;margin:14px 0 26px;font-weight:600}
-.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px;margin:0 0 20px}.muted{color:var(--muted);font-size:15px}
-hr{border:0;border-top:1px solid var(--line);margin:36px 0}</style></head><body><main>
-<h1>Ege Tycoon</h1><nav><a href="./">Support · Destek</a><a href="privacy.html">Privacy · Gizlilik</a><a href="terms.html">Terms · Koşullar</a></nav><div class="card" lang="en"><h2 style="margin-top:0">Support</h2><p>Ege Tycoon is a seaside restaurant management game published by Fatih Sultan Kilic.</p><p>Questions, problems or feedback: <a href="mailto:devfsk202@gmail.com">devfsk202@gmail.com</a></p><p class="muted">Please include your device model, iOS version and what you were doing when the problem happened. To restore purchases, open Settings in the game and tap "Restore purchases".</p></div><div class="card" lang="tr"><h2 style="margin-top:0">Destek</h2><p>Ege Tycoon, Fatih Sultan Kilic tarafından yayımlanan bir sahil lokantası işletme oyunudur.</p><p>Soru, sorun ve önerilerin için: <a href="mailto:devfsk202@gmail.com">devfsk202@gmail.com</a></p><p class="muted">Lütfen cihaz modelini, iOS sürümünü ve sorun olduğunda ne yaptığını yaz. Satın alımları geri yüklemek için oyunda Ayarlar'ı açıp "Satın alımları geri yükle"ye dokun.</p></div>
-</main></body></html>
+<html lang="en" data-lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Ege Tycoon – Support</title><meta name="description" content="A small taverna in an Aegean seaside town. Growing it is up to you."><meta name="theme-color" content="#2f6fdb"><link rel="icon" type="image/png" href="assets/favicon.png"><link rel="apple-touch-icon" href="assets/apple-touch-icon.png"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Figtree:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"><style>
+:root{
+  --sky:#eef5fc; --wall:#ffffff; --ink:#15325c; --muted:#5a6f8f; --line:#d9e5f3;
+  --blue:#2f6fdb; --blue-deep:#1f53b0; --green:#34b254; --green-deep:#23893d; --flower:#c93a7f;
+  --sea:#1f86b8; --shadow:0 1px 0 rgba(21,50,92,.06),0 8px 24px -12px rgba(21,50,92,.25);
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root{ --sky:#0d1a2d; --wall:#14253d; --ink:#e7eff9; --muted:#9db0cb; --line:#24395a;
+    --blue:#6ea2ff; --blue-deep:#3f74d6; --green:#3fc062; --green-deep:#2a8d45; --flower:#ff7fb8; --sea:#3aa3d4;
+    --shadow:0 1px 0 rgba(0,0,0,.2),0 10px 30px -14px rgba(0,0,0,.6); color-scheme:dark; }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--sky);color:var(--ink);font:17px/1.65 Figtree,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+a{color:var(--blue)}
+a:hover{color:var(--flower)}
+:focus-visible{outline:3px solid var(--flower);outline-offset:3px;border-radius:6px}
+h1,h2,h3,.btn,.seg button,.brand{font-family:Fredoka,Figtree,sans-serif}
+
+/* Kahraman: oyunun başlık ekranı, alt kenarı dalga */
+.hero{position:relative;background:#2a83c4}
+.hero img{display:block;width:100%;height:clamp(220px,34vw,520px);object-fit:cover;object-position:50% 40%}
+.wave{position:absolute;left:0;right:0;bottom:-1px;width:100%;height:clamp(28px,4vw,56px);display:block;color:var(--sky)}
+
+.wrap{max-width:760px;margin:0 auto;padding:0 16px}
+.topline{display:flex;justify-content:space-between;align-items:center;gap:12px;margin:20px 0 8px;flex-wrap:wrap}
+.tagline{margin:0;font-family:Fredoka,sans-serif;font-weight:500;font-size:clamp(20px,2.6vw,26px);line-height:1.3;max-width:28ch}
+
+/* Dil seçici: oyundaki sekmeler gibi */
+.seg{display:inline-flex;background:var(--wall);border:1px solid var(--line);border-radius:999px;padding:4px;box-shadow:var(--shadow)}
+.seg button{border:0;background:transparent;color:var(--muted);font-size:15px;font-weight:600;padding:6px 14px;border-radius:999px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--blue);color:#fff}
+
+/* İletişim kartı: beyaz badanalı duvar, mavi panjur kenarı */
+.help{position:relative;background:var(--wall);border-radius:28px;padding:28px 28px 30px;margin:24px 0 8px;box-shadow:var(--shadow);border-top:8px solid var(--blue);overflow:visible}
+.help h1{font-size:clamp(30px,4.4vw,40px);line-height:1.1;margin:0 0 10px;font-weight:700}
+.help p{margin:0 0 20px;max-width:46ch}
+.help .waiter{position:absolute;right:-6px;bottom:-14px;width:190px;height:auto;pointer-events:none}
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--green);color:#fff;text-decoration:none;font-weight:600;font-size:20px;
+  padding:14px 26px 16px;border-radius:18px;box-shadow:0 5px 0 var(--green-deep);transition:transform .08s,box-shadow .08s}
+.btn:hover{color:#fff;filter:brightness(1.05)}
+.btn:active{transform:translateY(4px);box-shadow:0 1px 0 var(--green-deep)}
+.btn svg{width:22px;height:22px;flex:none}
+.note{display:block;margin-top:14px;color:var(--muted);font-size:15px}
+.note a{display:inline-block;overflow-wrap:anywhere}
+
+section.block{margin:36px 0}
+section.block h2{font-size:24px;line-height:1.2;margin:0 0 12px;font-weight:600}
+.checks{list-style:none;padding:0;margin:0}
+.checks li{position:relative;padding-left:32px;margin:0 0 8px}
+.checks li::before{content:"";position:absolute;left:4px;top:.45em;width:14px;height:14px;border-radius:50%;background:var(--sea);
+  box-shadow:inset 0 0 0 4px var(--wall),0 0 0 2px var(--sea)}
+details{background:var(--wall);border:1px solid var(--line);border-radius:16px;margin:0 0 10px;padding:0 18px}
+summary{cursor:pointer;font-weight:600;padding:14px 0;list-style:none;display:flex;justify-content:space-between;gap:12px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-family:Fredoka,sans-serif;font-size:22px;line-height:1;color:var(--blue);transition:transform .15s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{margin:0 0 16px;color:var(--muted)}
+
+/* Yasal sayfalar */
+.bar{background:var(--blue);color:#fff}
+.bar .wrap{display:flex;align-items:center;gap:12px;padding-top:14px;padding-bottom:14px}
+.bar img{width:40px;height:40px;border-radius:10px;flex:none}
+.brand{color:#fff;text-decoration:none;font-weight:600;font-size:21px}
+.brand:hover{color:#fff;text-decoration:underline}
+.doc{background:var(--wall);border-radius:24px;padding:28px 28px 32px;margin:20px 0 8px;box-shadow:var(--shadow)}
+.doc h1{font-size:clamp(28px,4vw,36px);line-height:1.15;margin:0 0 4px;font-weight:700}
+.doc h2{font-size:20px;line-height:1.3;margin:30px 0 8px;font-weight:600}
+.doc p,.doc li{max-width:68ch}
+.doc p{margin:0 0 12px}
+.doc ul{margin:0 0 12px;padding-left:22px}
+.doc li{margin:0 0 6px}
+.doc .updated{color:var(--muted);font-size:15px;margin:0 0 20px}
+
+footer{color:var(--muted);font-size:15px;padding:28px 0 48px}
+footer nav{display:flex;gap:20px;flex-wrap:wrap;margin-bottom:6px}
+footer nav a{font-weight:600}
+footer p{margin:0}
+
+/* Dil gösterimi: JS yoksa iki dil de görünür */
+html[data-lang="en"] [data-l="tr"],html[data-lang="tr"] [data-l="en"]{display:none}
+
+@media (max-width:620px){
+  .help{padding:22px 20px 24px;border-radius:22px}
+  .help .waiter{width:112px;right:-4px;bottom:auto;top:-62px}
+  .btn{font-size:18px;width:100%;justify-content:center}
+  .doc{padding:22px 18px 26px;border-radius:20px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style><script>
+(function(){
+  var d=document.documentElement, h=location.hash.replace('#','');
+  var l=(h==='tr'||h==='en')?h:((navigator.language||'').toLowerCase().indexOf('tr')===0?'tr':'en');
+  function set(x){d.setAttribute('data-lang',x);d.lang=x;
+    var b=document.querySelectorAll('.seg button');for(var i=0;i<b.length;i++)b[i].setAttribute('aria-pressed',b[i].getAttribute('data-set')===x?'true':'false');}
+  set(l);document.addEventListener('DOMContentLoaded',function(){set(d.getAttribute('data-lang'));});
+  document.addEventListener('click',function(e){var t=e.target.closest&&e.target.closest('[data-set]');if(!t)return;
+    set(t.getAttribute('data-set'));history.replaceState(null,'','#'+t.getAttribute('data-set'));});
+})();
+</script></head><body>
+<header class="hero"><img src="assets/hero.jpg" alt="Ege Tycoon: an isometric Aegean seaside town with a taverna, a café and a beach bar by the sea" width="2000" height="491"><svg class="wave" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true"><path fill="currentColor" d="M0,32 C120,10 240,10 360,28 C480,46 600,52 720,36 C840,20 960,8 1080,22 C1200,36 1320,48 1440,30 L1440,60 L0,60 Z"/></svg></header>
+<main class="wrap"><div class="topline"><p class="tagline" data-l="en">A small taverna in an Aegean seaside town. Growing it is up to you.</p><p class="tagline" data-l="tr">Ege&#x27;de bir sahil kasabasında küçük bir lokanta. Büyütmek sana kalmış.</p><div class="seg" role="group" aria-label="Language / Dil"><button type="button" data-set="en" aria-pressed="true">English</button><button type="button" data-set="tr" aria-pressed="false">Türkçe</button></div></div><section class="help"><img class="waiter" src="assets/waiter.png" alt="" width="420" height="420"><h1 data-l="en">Need a hand?</h1><h1 data-l="tr">Yardım mı lazım?</h1><p data-l="en">Write to us about a bug, a lost purchase or an idea for the game. We read every message.</p><p data-l="tr">Bir hata, kaybolan bir satın alma ya da oyun için bir fikir için bize yaz. Her mesajı okuyoruz.</p><a class="btn" href="mailto:devfsk202@gmail.com?subject=Ege%20Tycoon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M4 7l8 6 8-6"/></svg><span data-l="en">Email support</span><span data-l="tr">Destek&#x27;e e-posta gönder</span></a><span class="note"><span data-l="en">Opens your mail app, addressed to</span><span data-l="tr">Posta uygulaman açılır, alıcı:</span> <a href="mailto:devfsk202@gmail.com?subject=Ege%20Tycoon">devfsk202@gmail.com</a></span></section><section class="block"><h2 data-l="en">Include these and we can help faster</h2><h2 data-l="tr">Şunları yazarsan daha hızlı yardım ederiz</h2><ul class="checks" data-l="en"><li>Your device model (for example, iPhone 15)</li><li>Your iOS version (Settings → General → About)</li><li>What you were doing when the problem happened</li></ul><ul class="checks" data-l="tr"><li>Cihaz modelin (örneğin iPhone 15)</li><li>iOS sürümün (Ayarlar → Genel → Hakkında)</li><li>Sorun olduğunda oyunda ne yapıyordun</li></ul></section><section class="block"><h2 data-l="en">Common questions</h2><h2 data-l="tr">Sık sorulanlar</h2><div data-l="en"><details><summary>I bought something on another device. How do I get it back?</summary><p>Open Settings in the game and tap &quot;Restore purchases&quot;. Use the same Apple ID you bought it with.</p></details><details><summary>Do I have to watch ads?</summary><p>No. Ads only play when you choose to watch one for a reward, and you can always skip the reward.</p></details><details><summary>Can I turn off personalized ads?</summary><p>Yes. Open Settings in the game and change your privacy choices. Rewards stay the same either way.</p></details><details><summary>How do I start over or delete my data?</summary><p>Open Settings in the game and tap &quot;Reset save&quot;, or uninstall the game. Your progress is stored only on your device.</p></details></div><div data-l="tr"><details><summary>Başka bir cihazda satın aldığım şeyi nasıl geri alırım?</summary><p>Oyunda Ayarlar&#x27;ı aç ve &quot;Satın alımları geri yükle&quot;ye dokun. Satın alırken kullandığın Apple ID ile giriş yapmış ol.</p></details><details><summary>Reklam izlemek zorunda mıyım?</summary><p>Hayır. Reklam yalnızca sen ödül için izlemeyi seçersen oynar; ödülü almadan da devam edebilirsin.</p></details><details><summary>Kişiselleştirilmiş reklamları kapatabilir miyim?</summary><p>Evet. Oyunda Ayarlar&#x27;dan gizlilik tercihlerini değiştir. Ödüller her iki durumda da aynıdır.</p></details><details><summary>Baştan nasıl başlarım ya da verilerimi nasıl silerim?</summary><p>Oyunda Ayarlar&#x27;dan &quot;Kaydı sıfırla&quot;ya dokun ya da oyunu sil. İlerlemen yalnızca cihazında saklanır.</p></details></div></section></main>
+<footer class="wrap"><nav><a href="./"><span data-l="en">Support</span><span data-l="tr">Destek</span></a><a href="privacy.html"><span data-l="en">Privacy Policy</span><span data-l="tr">Gizlilik Politikası</span></a><a href="terms.html"><span data-l="en">Terms of Use</span><span data-l="tr">Kullanım Koşulları</span></a></nav><p>© 2026 Fatih Sultan Kilic</p></footer>
+</body></html>
